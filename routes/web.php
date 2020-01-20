@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.base');
 });
+
+Route::get('/emp', 'EmployeeController@index');
+Route::get('/tasks', 'TaskController@index');
